@@ -1,5 +1,6 @@
 #ifndef CALCULATIONS_H
 #define CALCULATIONS_H
+#include <iostream>
 
 class Calculations
 {
@@ -11,13 +12,14 @@ private:
 public:
 	Calculations();
 	Calculations(double temperatureInCelsius, double totalNumberOfRecievedTemperatureValues, double accumulatedTemperatureInCelsius);
-	double calculateAverageTemperatureInCelsius(double temperatureInCelsius, double accumulatedTemperatureInCelsius, double totalNumberOfRecievedTemperatureValues);
 	double calculateAccumulatedTemperatureInCelsius(double temperatureInCelsius, double accumulatedTemperatureInCelsius);
+	double calculateAverageTemperatureInCelsius(double accumulatedTemperatureInCelsius, double totalNumberOfRecievedTemperatureValues);
 	double getAverageTemperatureInCelsius();
 	void setAverageTemperatureInCelsius(double averageTemp);
 	double getTotalNumberOfRecievedTemperatureValues();
 	void setTotalNumberOfRecievedTemperatureValues(double totalNumberOfRecievedTemperatureValues);
 	double getAccumulatedTemperatureInCelsius();
 	void setAccumulatedTemperatureInCelsius(double accumulatedTemperatureInCelsius);
+	void reportAverageAndAccumulative();
 };
 #endif // !CALCULATIONS_H

@@ -8,39 +8,45 @@ Calculations::Calculations(double temperatureInCelsius, double totalNumberOfReci
 	this->accumulatedTemperatureInCelsius = accumulatedTemperatureInCelsius;
 }
 
-double Calculations::calculateAverageTemperatureInCelsius(double temperatureInCelsius, double accumulatedTemperatureInCelsius, double totalNumberOfRecievedTemperatureValues)
-{
-	return (accumulatedTemperatureInCelsius + temperatureInCelsius) / totalNumberOfRecievedTemperatureValues;
-}
 double Calculations::calculateAccumulatedTemperatureInCelsius(double temperatureInCelsius, double accumulatedTemperatureInCelsius)
 {
+	totalNumberOfRecievedTemperatureValues++;
 	return accumulatedTemperatureInCelsius + temperatureInCelsius;
 }
 
+double Calculations::calculateAverageTemperatureInCelsius(double accumulatedTemperatureInCelsius, double totalNumberOfRecievedTemperatureValues)
+{
+	return accumulatedTemperatureInCelsius / totalNumberOfRecievedTemperatureValues;
+}
+
+void Calculations::reportAverageAndAccumulative()
+{
+	cout << "Average temperature over time is :" << averageTemperatureInCelsius << " Accumulative temperature over time is: " << accumulatedTemperatureInCelsius << endl;
+}
+
+//-----------------------------------------getters-------------------------------------------------------------------
 double Calculations::getAverageTemperatureInCelsius()
 {
 	return averageTemperatureInCelsius;
 }
-void Calculations::setAverageTemperatureInCelsius(double averageTemperatureInCelsius)
+double Calculations::getTotalNumberOfRecievedTemperatureValues()
 {
-	this->averageTemperatureInCelsius = averageTemperatureInCelsius;
+	return totalNumberOfRecievedTemperatureValues;
 }
-
 double Calculations::getAccumulatedTemperatureInCelsius()
 {
 	return accumulatedTemperatureInCelsius;
 }
-
+//---------------------------------------- - setters------------------------------------------------------------------ -
+void Calculations::setAverageTemperatureInCelsius(double averageTemperatureInCelsius)
+{
+	this->averageTemperatureInCelsius = averageTemperatureInCelsius;
+}
 void Calculations::setAccumulatedTemperatureInCelsius(double accumulatedTemperatureInCelsius)
 {
 	this->accumulatedTemperatureInCelsius = accumulatedTemperatureInCelsius;
 }
-
 void Calculations::setTotalNumberOfRecievedTemperatureValues(double totalNumberOfRecievedTemperatureValues)
 {
 	this->totalNumberOfRecievedTemperatureValues = totalNumberOfRecievedTemperatureValues;
-}
-double Calculations::getTotalNumberOfRecievedTemperatureValues()
-{
-	return totalNumberOfRecievedTemperatureValues;
 }
