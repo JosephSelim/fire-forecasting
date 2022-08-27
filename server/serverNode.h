@@ -2,7 +2,7 @@
 #define SERVERNODE_H
 
 #include <string>
-#include "Network.h"
+#include "../Network.h"
 #include "iostream"
 class ServerNode
 {
