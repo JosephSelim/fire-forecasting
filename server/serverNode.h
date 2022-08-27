@@ -2,8 +2,8 @@
 #define SERVERNODE_H
 
 #include <string>
-#include "../Network.h"
 #include "iostream"
+using namespace std;
 class ServerNode
 {
 private:

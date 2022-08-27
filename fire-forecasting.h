@@ -1,7 +1,6 @@
-﻿#ifndef FIRE-FORECASTING_H
-#define FIRE-FORECASTING_H
+﻿#pragma once
 
 #include <iostream>
-
-
-#endif
+#include "client/clientNode.h"
+#include "server/sensorNode.h"
+#include "server/serverNode.h"
