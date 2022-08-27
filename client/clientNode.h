@@ -1,7 +1,5 @@
 #ifndef CLIENTNODE_H
 #define CLIENTNPDE_H
-#include <string>
-#include "../Network.h"
 #include "iostream"
 
 class ClientNode 
@@ -11,6 +9,6 @@ private:
 public:
 	ClientNode();
 	ClientNode(int PORT);
-	void recieveDATA(int PORT);
+	void recieveData(int PORT);
 };
 #endif // !CLIENTNODE_H
