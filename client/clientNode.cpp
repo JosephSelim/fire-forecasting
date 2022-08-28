@@ -61,7 +61,6 @@ double ClientNode::recieveData()
             printf("recvfrom() failed with error code: %d", WSAGetLastError());
             exit(0);
         }
-        //cout << answer << "\n";
         string s = answer;
         return stod(s);
 }
