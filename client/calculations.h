@@ -14,12 +14,15 @@ public:
 	Calculations(double temperatureInCelsius, double totalNumberOfRecievedTemperatureValues, double accumulatedTemperatureInCelsius);
 	double calculateAccumulatedTemperatureInCelsius(double temperatureInCelsius, double accumulatedTemperatureInCelsius);
 	double calculateAverageTemperatureInCelsius(double accumulatedTemperatureInCelsius, double totalNumberOfRecievedTemperatureValues);
+	
 	double getAverageTemperatureInCelsius();
-	void setAverageTemperatureInCelsius(double averageTemp);
 	double getTotalNumberOfRecievedTemperatureValues();
-	void setTotalNumberOfRecievedTemperatureValues(double totalNumberOfRecievedTemperatureValues);
 	double getAccumulatedTemperatureInCelsius();
+
 	void setAccumulatedTemperatureInCelsius(double accumulatedTemperatureInCelsius);
+	void setAverageTemperatureInCelsius(double averageTemp);
+	void setTotalNumberOfRecievedTemperatureValues(double totalNumberOfRecievedTemperatureValues);
+
 	void reportAverageAndAccumulative();
 };
 #endif // !CALCULATIONS_H
