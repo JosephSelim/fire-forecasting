@@ -1,7 +1,7 @@
-﻿#ifndef FIRE-FORECASTING_H
-#define FIRE-FORECASTING_H
+﻿#pragma once
 
 #include <iostream>
-
-
-#endif
+#include "client/clientNode.h"
+#include <thread>
+#include "client/calculations.h"
+using namespace std;
