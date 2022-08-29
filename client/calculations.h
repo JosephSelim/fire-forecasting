@@ -4,5 +4,4 @@
 using namespace std;
 void calculateAccumulatedTemperatureInCelsius(double* temperatureInCelsius, double* accumulatedTemperatureInCelsius, double* totalNumberOfRecievedTemperatureValues);
 void calculateAverageTemperatureInCelsius(double* averageTemperatureInCelsius, double* accumulatedTemperatureInCelsius, double* totalNumberOfRecievedTemperatureValues);
-bool hello();
 #endif // !CALCULATIONS_H
