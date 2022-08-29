@@ -12,8 +12,3 @@ void calculateAverageTemperatureInCelsius(double* averageTemperatureInCelsius, d
 		(*averageTemperatureInCelsius) = (*accumulatedTemperatureInCelsius) / (*totalNumberOfRecievedTemperatureValues);
 	}
 }
-
-bool hello()
-{
-	return true;
-}
