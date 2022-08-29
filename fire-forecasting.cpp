@@ -17,7 +17,9 @@ void reportAverageAndAccumulative(double* averageTemperatureInCelsius, double* a
 {
 	while (1) 
 	{
-		cout << "Average temperature is: " << *averageTemperatureInCelsius << "		Accumulative temperature is:" << *accumulatedTemperatureInCelsius << endl;
+		cout << "---------------------------Report---------------------------" << endl;
+		cout << "Average temperature is:		" << *averageTemperatureInCelsius << endl;
+		cout << "Accumulative temperature is :  " << *accumulatedTemperatureInCelsius << endl;
 		Sleep(5000);
 	}
 }
