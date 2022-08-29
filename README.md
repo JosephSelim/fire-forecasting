@@ -5,7 +5,8 @@ The company has decided to invest into forest fire forecasting
 having: 
 >***server*** node (temperature sensor placed in the forest )
 >> - send temperature reading every 1 second
->> - allow multi-clients to connect and get the temperature data (not applicable yet)<br>  
+>> - allow multi-clients to connect and get the temperature data (not applicable yet)  
+
 > GitHub repo for ***server node*** can be found at **[Server](https://github.com/JosephSelim/fire-forecasting-server.git)**.
 
 
@@ -16,7 +17,8 @@ having:
 >> - calculate average temperature over time 
 >> - calculate accumulated temperature over time
 >> - print a report every 5 seconds with the previous calculations
->> - send the calculated results to a visualization tool (not applicable yet)<br>    
+>> - send the calculated results to a visualization tool (not applicable yet)  
+
 > GitHub repo for ***client node*** can be found at **[Client](https://github.com/JosephSelim/fire-forecasting.git)**.
 
 ###
