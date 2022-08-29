@@ -1,25 +1,13 @@
 ﻿#include "fire-forecasting.h"
 
-using namespace std;
-void calculateAccumulatedTemperatureInCelsius(double* temperatureInCelsius, double* accumulatedTemperatureInCelsius, double* totalNumberOfRecievedTemperatureValues)
-{
-	*totalNumberOfRecievedTemperatureValues = *totalNumberOfRecievedTemperatureValues + 1;
-	*accumulatedTemperatureInCelsius += *temperatureInCelsius;
-}
-void calculateAverageTemperatureInCelsius(double* averageTemperatureInCelsius, double* accumulatedTemperatureInCelsius, double* totalNumberOfRecievedTemperatureValues)
-{
-	if(*totalNumberOfRecievedTemperatureValues !=0)
-	{
-		(*averageTemperatureInCelsius) = (*accumulatedTemperatureInCelsius) / (*totalNumberOfRecievedTemperatureValues);
-	}
-}
+
 void reportAverageAndAccumulative(double* averageTemperatureInCelsius, double* accumulatedTemperatureInCelsius)
 {
-	while (1) 
+	while (1)
 	{
 		cout << "---------------------------Report---------------------------" << endl;
-		cout << "Average temperature is:		" << *averageTemperatureInCelsius << endl;
-		cout << "Accumulative temperature is :  " << *accumulatedTemperatureInCelsius << endl;
+		cout << "Average temperature is:			" << *averageTemperatureInCelsius << endl;
+		cout << "Accumulative temperature is :		" << *accumulatedTemperatureInCelsius << endl;
 		Sleep(5000);
 	}
 }
