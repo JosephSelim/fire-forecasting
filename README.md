@@ -6,6 +6,7 @@ having:
 >***server*** node (temperature sensor placed in the forest )
 >> - send temperature reading every 1 second
 >> - allow multi-clients to connect and get the temperature data (not applicable yet)
+
 GitHub repo for ***server node*** can be found at **[Server](https://github.com/JosephSelim/fire-forecasting-server.git)**.  
 ###
 > ***client*** node
