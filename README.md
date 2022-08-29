@@ -1,8 +1,6 @@
 
 # Fire Forecasting
-
 The company has decided to invest into forest fire forecasting having:
-![1](https://user-images.githubusercontent.com/30760959/187175834-495c479f-c7ae-4330-a03c-9c2d2ccf262b.PNG)
 - ***Server*** node (temperature sensor placed in the forest)
     - Send temperature reading every 1 second.
     - Allow multi-clients to connect and get the temperature data (not applicable yet).
@@ -17,6 +15,7 @@ The company has decided to invest into forest fire forecasting having:
 
     GitHub repo for ***client node*** can be found at **[Client](https://github.com/JosephSelim/fire-forecasting.git)**.
 
+![1](https://user-images.githubusercontent.com/30760959/187175834-495c479f-c7ae-4330-a03c-9c2d2ccf262b.PNG)
 ### Implementation methods:
 
  - Used **web Sockets** as a communication method.
